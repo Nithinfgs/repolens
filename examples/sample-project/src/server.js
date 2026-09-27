@@ -1,0 +1,4 @@
+import express from "express";
+const app = express();
+app.get("/health", (_, response) => response.json({ ok: true }));
+app.listen(3000);

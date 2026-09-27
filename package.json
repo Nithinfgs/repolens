@@ -1,0 +1,16 @@
+{
+  "name": "repolens",
+  "version": "0.1.0",
+  "description": "Understand an unfamiliar codebase in minutes.",
+  "type": "module",
+  "bin": { "repolens": "dist/cli.js" },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node --test dist/analyzer.test.js"
+  },
+  "devDependencies": { "@types/node": "^22.10.1", "typescript": "^5.7.2" },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

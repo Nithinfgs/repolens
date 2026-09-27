@@ -1,0 +1,9 @@
+name: Bug report
+description: Report incorrect scan output or a CLI failure.
+labels: [bug]
+body:
+  - type: textarea
+    attributes: { label: What happened?, description: Include command, expected outcome, and actual outcome. }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: Safe reproduction details, description: Remove private code, secrets, and customer data. }
